@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OutlookFormFinder": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
