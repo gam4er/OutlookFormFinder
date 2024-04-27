@@ -20,6 +20,8 @@ jobs:
       uses: microsoft/setup-msbuild@v2
     - name: Restore NuGet packages
       run: msbuild /t:restore OutlookFormFinder.sln
+    - name: Install specific NuGet package
+      run: nuget install Microsoft.Office.Interop.Outlook -Version 15.0.4797.1004
     - name: Build
       run: msbuild OutlookFormFinder.sln /p:Configuration=Release /p:Platform="Any CPU"
 
