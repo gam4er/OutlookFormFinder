@@ -1,15 +1,8 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-using System;
-using Microsoft.Office.Interop.Outlook;
-using System.Text;
-using static System.Net.WebRequestMethods;
-using Newtonsoft.Json;
-using System.Runtime.InteropServices;
-using System.Reflection;
-using System.Dynamic;
+﻿using Microsoft.Office.Interop.Outlook;
+
 using Spectre.Console;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Security.Cryptography;
+
+using System.Text;
 
 namespace OutlookFormFinder
 {
