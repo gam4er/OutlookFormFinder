@@ -18,6 +18,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2
+    - name: Restore NuGet packages
+      run: msbuild /t:restore YourSolution.sln
     - name: Build
       run: msbuild OutlookFormFinder.sln /p:Configuration=Release /p:Platform="Any CPU"
 
