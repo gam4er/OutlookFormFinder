@@ -16,26 +16,21 @@
       <Guid>2df8d04c-5bfa-101b-bde5-00aa0044de52</Guid>
       <Lcid>0</Lcid>
       <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
       <Private>True</Private>
     </COMReference>
     <COMReference Include="Microsoft.Office.Interop.Outlook">
-      <WrapperTool>primary</WrapperTool>
+      <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>6</VersionMinor>
       <VersionMajor>9</VersionMajor>
       <Guid>00062fff-0000-0000-c000-000000000046</Guid>
       <Lcid>0</Lcid>
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
-      <Private>True</Private>
     </COMReference>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.49.1" />
   </ItemGroup>
-
-
-
-
 </Project>
