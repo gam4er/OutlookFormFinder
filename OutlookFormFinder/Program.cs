@@ -1,8 +1,6 @@
-﻿using Microsoft.Office.Interop.Outlook;
-
-using Spectre.Console;
-
+﻿using Spectre.Console;
 using System.Text;
+using Microsoft.Office.Interop.Outlook;
 
 namespace OutlookFormFinder
 {

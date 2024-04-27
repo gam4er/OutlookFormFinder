@@ -2,9 +2,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>OutlookFormFinder.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,13 +20,14 @@
       <Private>True</Private>
     </COMReference>
     <COMReference Include="Microsoft.Office.Interop.Outlook">
-      <WrapperTool>tlbimp</WrapperTool>
+      <WrapperTool>primary</WrapperTool>
       <VersionMinor>6</VersionMinor>
       <VersionMajor>9</VersionMajor>
       <Guid>00062fff-0000-0000-c000-000000000046</Guid>
       <Lcid>0</Lcid>
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
+      <Private>True</Private>
     </COMReference>
   </ItemGroup>
 
