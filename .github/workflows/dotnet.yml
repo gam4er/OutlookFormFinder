@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v4.3.3
       with:
           name: net481
-          path: bin\Release\net481\
+          path: OutlookFormFinder/bin/Release/net481/
 
 
    
