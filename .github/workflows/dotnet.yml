@@ -29,8 +29,13 @@ jobs:
       with:
           name: net481
           path: OutlookFormFinder/bin/Release/net481/
-    - name: GH Release
-      uses: softprops/action-gh-release@v2.0.4            
+    - name: Create Release
+      uses: elgohr/Github-Release-Action@v5
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        title: New Release
+
 
 
    
