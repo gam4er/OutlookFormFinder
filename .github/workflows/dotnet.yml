@@ -29,8 +29,8 @@ jobs:
       with:
           name: net481
           path: OutlookFormFinder/bin/Release/net481/
-    - name: Release          
-      uses: softprops/action-gh-release@v2
+    - name: GH Release
+      uses: softprops/action-gh-release@v2.0.4            
       if: startsWith(github.ref, 'refs/tags/')
 
    
