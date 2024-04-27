@@ -23,7 +23,7 @@ jobs:
     - name: Install specific NuGet package
       run: nuget install Microsoft.Office.Interop.Outlook -Version 15.0.4797.1004
     - name: Install dependencies
-      run: dotnet add package Microsoft.Office.Interop.Outlook -Version 15.0.4797.1004
+      run: dotnet add package Microsoft.Office.Interop.Outlook
     - name: Build
       run: msbuild OutlookFormFinder.sln /p:Configuration=Release /p:Platform="Any CPU"
     - name: Upload a Build Artifact
